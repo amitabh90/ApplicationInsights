@@ -30,7 +30,7 @@ parameters:
     displayName: App Insights Type (ex- web,java,other)
     default: web
   - name: tags
-    type: string
+    type: object
     displayName: Provide the resource tagging
     values:
       - env:test
