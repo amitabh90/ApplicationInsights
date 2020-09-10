@@ -33,7 +33,7 @@ parameters:
     type: object
     displayName: Provide the resource tagging
     default: [
-      -Environment: "Non-Prod"
+      Environment: "Non-Prod"
     ]
 
 steps:
