@@ -42,5 +42,4 @@ steps:
              -AppInsightsName '${{parameters.appInsightsName }}'
              -Location '${{parameters.location }}'
              -AppInsightsType '${{parameters.appInsightsType }}'
-             -Tags '${{parameters.tags }}'
     azurePowerShellVersion: 'LatestVersion'
