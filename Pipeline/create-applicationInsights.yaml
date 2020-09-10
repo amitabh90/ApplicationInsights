@@ -32,14 +32,8 @@ parameters:
   - name: tags
     type: object
     displayName: Provide the resource tagging
-    default: {
-        "Environment": "Non-Prod",
-        "Contact": "test.user@testcompany.com",
-        "PurchaseOrder": "1234",
-        "CostCenter": "7890",
-        "ServiceName": "DeploymentValidation",
-        "Role": "DeploymentValidation"
-        }
+    default: 
+        -Environment: "Non-Prod"
 
 steps:
 - task: AzurePowerShell@5
