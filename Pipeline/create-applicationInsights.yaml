@@ -42,7 +42,7 @@ steps:
   inputs:
     azureSubscription: ${{parameters.azureSubscription }}
     ScriptType: 'FilePath'
-    ScriptPath: '$(Build.SourcesDirectory)\CoreInfra\ApplicationInsights\Scripts\Create-AppInsights.ps1'
+    ScriptPath: CoreInfra/ApplicationInsights/Scripts/Create-AppInsights.ps1
     ScriptArguments:  -ResourceGroupName ${{parameters.resourceGroupName }}
              -AppInsightsName '${{parameters.appInsightsName }}'
              -Location '${{parameters.location }}'
