@@ -29,12 +29,6 @@ parameters:
     type: string
     displayName: App Insights Type (ex- web,java,other)
     default: web
-  - name: tags
-    type: object
-    displayName: Provide the resource tagging
-    default:
-      tag:
-       - foo: FOO
 
 steps:
 - task: AzurePowerShell@5

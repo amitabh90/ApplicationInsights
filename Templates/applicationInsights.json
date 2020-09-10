@@ -29,7 +29,10 @@
         },
         "tags": {
             "type": "object",
-            "defaultValue": {},
+            "defaultValue": {
+                    "Environment": "Dev",
+                    "Project": "Tutorial"
+            },
             "metadata": {
                 "description": "Optional. Tags of the resource."
             }
