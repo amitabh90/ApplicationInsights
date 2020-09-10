@@ -24,7 +24,6 @@ Param (
     [String] $ResourceGroupName,
 
     [Parameter(Mandatory = $true)]
-    [ValidatePattern('^[a-z0-9\-]{3,15}$')]
     [String] $AppInsightsName,
 
     [Parameter(Mandatory = $false)]
