@@ -32,9 +32,8 @@ parameters:
   - name: tags
     type: object
     displayName: Provide the resource tagging
-    default: [
+    default:
       Environment: "Non-Prod"
-    ]
 
 steps:
 - task: AzurePowerShell@5
