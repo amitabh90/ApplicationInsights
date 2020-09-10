@@ -29,6 +29,13 @@ parameters:
     type: string
     displayName: App Insights Type (ex- web,java,other)
     default: web
+  - name: tags
+    type: object
+    default: [
+      {
+        env: demo
+      }
+    ]
 
 steps:
 - task: AzurePowerShell@5

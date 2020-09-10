@@ -32,7 +32,10 @@ Param (
 
     [Parameter(Mandatory = $true)]
     [ValidateSet('web', 'java', 'other')]
-    [String] $AppInsightsType
+    [String] $AppInsightsType,
+
+    [Parameter(Mandatory = $false)]
+    [System.Object] $Tags
 )
 
 Write-Verbose "Creating parameters object for ARM Template."
@@ -40,8 +43,8 @@ $ARMParams = @{
     appInsightsName               = $AppInsightsName
     location                      = $Location
     appInsightsType               = $AppInsightsType
+    tags                          = $Tags
 }
-
 
 $TemplateName = 'applicationInsights.json'
 
