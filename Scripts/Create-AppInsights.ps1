@@ -66,5 +66,5 @@ If ($ErrorMessages) {
 }
 else {
     Write-Verbose "ApplicationInsights successfully created."
-    Write-Output $($Result.Outputs)
+    Write-Output $($Result.Outputs.Values)
 }
