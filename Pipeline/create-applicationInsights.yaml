@@ -33,7 +33,8 @@ parameters:
     type: object
     displayName: Provide the resource tagging
     default:
-     foo: FOO
+      tag:
+       - foo: FOO
 
 steps:
 - task: AzurePowerShell@5
