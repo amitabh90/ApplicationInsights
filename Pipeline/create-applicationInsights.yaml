@@ -31,8 +31,7 @@ parameters:
     default: web
   - name: tags
     type: object
-    default: {env: demo,
-         name: test  }
+    default: {name: test}
 steps:
 - task: AzurePowerShell@5
   displayName: create - ApplicationInsights
