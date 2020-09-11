@@ -31,11 +31,8 @@ parameters:
     default: web
   - name: tags
     type: object
-    default: 
-     value:
-      one: apple
-      two: pear
-      count: 3
+    default:
+    one: apple
 steps:
 - task: AzurePowerShell@5
   displayName: create - ApplicationInsights
