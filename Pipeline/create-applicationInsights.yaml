@@ -31,7 +31,10 @@ parameters:
     default: web
   - name: tags
     type: object
-    default: {name: test}
+    default:
+    - FOO
+    - BAR
+    - ZOO
 steps:
 - task: AzurePowerShell@5
   displayName: create - ApplicationInsights
