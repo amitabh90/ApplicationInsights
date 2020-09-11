@@ -24,15 +24,13 @@ parameters:
   - name: location
     type: string
     displayName: location for AppInsights
-    default: EastUS2
+    default: eastus2
   - name: appInsightsType
     type: string
     displayName: App Insights Type (ex- web,java,other)
     default: web
   - name: tags
     type: object
-    default:
-    - field1: 'a'
 steps:
 - task: AzurePowerShell@5
   displayName: create - ApplicationInsights
