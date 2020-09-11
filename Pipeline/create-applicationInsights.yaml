@@ -32,9 +32,7 @@ parameters:
   - name: tags
     type: object
     default:
-    - FOO
-    - BAR
-    - ZOO
+    - field1: 'a'
 steps:
 - task: AzurePowerShell@5
   displayName: create - ApplicationInsights
