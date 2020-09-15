@@ -29,6 +29,12 @@
         },
         "tags": {
             "type": "object",
+            "defaultValue":{
+                "value": {
+                    "Environment": "Non-Prod",
+                    "Contact": "test.user@testcompany.com"
+                }
+            },
             "metadata": {
                 "description": "Optional. Tags of the resource."
             }

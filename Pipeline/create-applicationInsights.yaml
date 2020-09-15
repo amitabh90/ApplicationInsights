@@ -29,8 +29,6 @@ parameters:
     type: string
     displayName: App Insights Type (ex- web,java,other)
     default: web
-  - name: tags
-    type: object
 steps:
 - task: AzurePowerShell@5
   displayName: create - ApplicationInsights
@@ -43,6 +41,4 @@ steps:
              -AppInsightsName '${{parameters.appInsightsName }}'
              -Location '${{parameters.location }}'
              -AppInsightsType '${{parameters.appInsightsType }}'
-             -tags '{env:prod,
-                 test:good }'
     azurePowerShellVersion: 'LatestVersion'
