@@ -32,11 +32,7 @@ Tag names and tag values can be provided as needed. A tag can be left without a 
 "tags": {
     "value": {
         "Environment": "Non-Prod",
-        "Contact": "test.user@testcompany.com",
-        "PurchaseOrder": "1234",
-        "CostCenter": "7890",
-        "ServiceName": "DeploymentValidation",
-        "Role": "DeploymentValidation"
+        "Contact": "test.user@testcompany.com"
     }
 }
 ```
